@@ -1,7 +1,12 @@
 import React, { useState, useContext, useRef } from "react"
 import { useSpring } from "react-spring"
 import WhyBs from "../../components/imageComponents/WhBs.image"
-import { SHeader, StyledHero, StyledImage, StyledP } from "./why-bs.styles"
+import {
+  SHeader,
+  StyledHero,
+  StyledImage,
+  StyledP,
+} from "../../components/shared_styles/why-bs.styles"
 
 const whyBoardSpeak = React.memo(() => {
   const springProps = useSpring({
