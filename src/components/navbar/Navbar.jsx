@@ -33,13 +33,13 @@ const StyledDropdownBtn = styled(Button)`
 `
 
 export default function Navbar() {
-  const [openState, setOpenState] = useState(false)
-  const { openModal } = useContext(AppContext)
+  const { openModal, navState, setNavState, closeNav } = useContext(AppContext)
   const menu = (
     <Menu>
       <Menu.Item key="1">
         <Link
           to="/"
+          onClick={closeNav}
           activeStyle={{ color: "#FFAF0F" }}
           style={{ fontSize: "18px" }}
         >
@@ -49,6 +49,7 @@ export default function Navbar() {
       <Menu.Item key="2">
         <Link
           to="/h2"
+          onClick={closeNav}
           activeStyle={{ color: "#FFAF0F" }}
           style={{ fontSize: "18px" }}
         >
@@ -58,6 +59,7 @@ export default function Navbar() {
       <Menu.Item key="3">
         <Link
           to="/h3"
+          onClick={closeNav}
           activeStyle={{ color: "#FFAF0F" }}
           style={{ fontSize: "18px" }}
         >
@@ -77,9 +79,9 @@ export default function Navbar() {
         <HamburgerSpring
           barColor="#454041"
           buttonWidth={30}
-          isActive={openState}
+          isActive={navState}
           onClick={e => {
-            setOpenState(!openState)
+            setNavState(!navState)
             e.currentTarget.blur()
           }}
         />
@@ -87,7 +89,7 @@ export default function Navbar() {
       <Location>
         {({ location }) => {
           return (
-            <div className={`nav-links ${openState ? "show" : "hide"}`}>
+            <div className={`nav-links ${navState ? "show" : "hide"}`}>
               {/* <StyledButton>Sign Up</StyledButton> */}
               <Dropdown overlay={menu} placement="bottomRight">
                 <StyledDropdownBtn
@@ -100,7 +102,11 @@ export default function Navbar() {
                   HOME <Icon type="down" />
                 </StyledDropdownBtn>
               </Dropdown>
-              <Link to="/why-boardspeak" activeStyle={{ color: "#FFAF0F" }}>
+              <Link
+                to="/why-boardspeak"
+                onClick={closeNav}
+                activeStyle={{ color: "#FFAF0F" }}
+              >
                 Why Us
               </Link>
 

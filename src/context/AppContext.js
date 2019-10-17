@@ -4,11 +4,15 @@ export const Context = createContext({})
 
 export const Provider = props => {
   const [modalState, setModalState] = useState(false)
+  const [navState, setNavState] = useState(false)
   const [appEmail, setAppEmail] = useState("")
   const { children } = props
 
   const closeModal = () => {
     setModalState(false)
+  }
+  const closeNav = () => {
+    setNavState(false)
   }
 
   const openModal = () => {
@@ -20,6 +24,9 @@ export const Provider = props => {
   }
 
   const appContext = {
+    navState,
+    closeNav,
+    setNavState,
     modalState,
     openModal,
     closeModal,
