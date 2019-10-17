@@ -9,6 +9,7 @@ import { ThemeProvider } from "styled-components"
 import { theme } from "../shared_styles/themeProvider"
 import { AppProvider } from "../../context/index"
 
+import Footer from "../footer/Foother"
 import ModalForm from "../modal/Modal"
 
 const Layout = ({ children }) => {
@@ -19,6 +20,7 @@ const Layout = ({ children }) => {
         <ModalForm />
         <Navbar />
         <div className="content-container"> {children}</div>
+        <Footer />
       </ThemeProvider>
     </AppProvider>
   )
