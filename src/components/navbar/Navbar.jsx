@@ -48,7 +48,7 @@ export default function Navbar() {
       </Menu.Item>
       <Menu.Item key="2">
         <Link
-          to="/h2"
+          to="/h2/"
           onClick={closeNav}
           activeStyle={{ color: "#FFAF0F" }}
           style={{ fontSize: "18px" }}
@@ -58,7 +58,7 @@ export default function Navbar() {
       </Menu.Item>
       <Menu.Item key="3">
         <Link
-          to="/h3"
+          to="/h3/"
           onClick={closeNav}
           activeStyle={{ color: "#FFAF0F" }}
           style={{ fontSize: "18px" }}
@@ -103,8 +103,9 @@ export default function Navbar() {
                 </StyledDropdownBtn>
               </Dropdown>
               <Link
-                to="/why-boardspeak"
+                to="/why-boardspeak/"
                 onClick={closeNav}
+                // getProps={(a, b, c, d) => console.log(a, b, c, d)}
                 activeStyle={{ color: "#FFAF0F" }}
               >
                 Why Us
@@ -123,8 +124,8 @@ function checkLocation(locationArg, locationProps) {
   console.log(locationArg, locationProps)
   if (
     locationArg === "home" &&
-    (locationProps === "/h2" ||
-      locationProps === "/h3" ||
+    (locationProps === "/h2/" ||
+      locationProps === "/h3/" ||
       locationProps === "/")
   ) {
     return true
