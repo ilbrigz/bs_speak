@@ -3,6 +3,8 @@ import SEO from "../components/seo"
 import Hero from "../components/hero/Hero"
 import HeroImage from "../components/imageComponents/Hero3.image"
 import CardsContainer from "../components/features/cards_container/CardsContainer"
+import { Link } from "gatsby"
+import { Icon } from "antd"
 import {
   pageTitle,
   pageSubtitle,
@@ -22,6 +24,20 @@ const Page2 = () => (
       HeroImage={HeroImage}
     />
     <CardsContainer cards={cards} />
+    <div
+      style={{
+        width: "100%",
+        display: "flex",
+        justifyContent: "flex-start",
+        fontSize: "18px",
+        marginBottom: "2rem",
+      }}
+    >
+      <Link to="/h2/">
+        <Icon type="swap-left" />
+        <span>Take Control</span>
+      </Link>
+    </div>
   </>
 )
 
