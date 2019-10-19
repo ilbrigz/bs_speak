@@ -29,7 +29,7 @@ const IndexPage = () => (
       style={{
         width: "100%",
         display: "flex",
-        justifyContent: "space-between",
+        justifyContent: "flex-end",
         fontSize: "16px",
         marginBottom: "2rem",
         marginTop: "2rem",
