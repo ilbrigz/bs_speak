@@ -28,9 +28,10 @@ const Page2 = () => (
       style={{
         width: "100%",
         display: "flex",
-        justifyContent: "flex-start",
-        fontSize: "18px",
+        justifyContent: "space-between",
+        fontSize: "16px",
         marginBottom: "2rem",
+        marginTop: "2rem",
       }}
     >
       <Link to="/h2/">

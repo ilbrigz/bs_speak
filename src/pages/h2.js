@@ -29,8 +29,9 @@ const Page2 = () => (
         width: "100%",
         display: "flex",
         justifyContent: "space-between",
-        fontSize: "18px",
+        fontSize: "16px",
         marginBottom: "2rem",
+        marginTop: "2rem",
       }}
     >
       <Link to="/">
