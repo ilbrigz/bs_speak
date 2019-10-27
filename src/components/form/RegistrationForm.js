@@ -30,6 +30,7 @@ class RegistrationForm extends React.Component {
           prefix,
           workNumber,
           country,
+          feature,
         } = values
         try {
           const result = await messageService.create({
@@ -42,6 +43,7 @@ class RegistrationForm extends React.Component {
             country,
             noofteam: noOfTeam,
             phone: `${prefix}${workNumber}`,
+            feature,
           })
           if (result.success) {
             hide()
@@ -187,7 +189,7 @@ class RegistrationForm extends React.Component {
                 ],
               })(<Input />)}
             </Form.Item>
-            <Form.Item label="Number of employees">
+            <Form.Item label="Number of team/group members">
               {getFieldDecorator("noOfTeam", {
                 rules: [
                   {
@@ -283,6 +285,24 @@ class RegistrationForm extends React.Component {
               })(
                 <Input addonBefore={prefixSelector} style={{ width: "100%" }} />
               )}
+            </Form.Item>
+            <Form.Item
+              label="Features"
+              extra="Features you need in order to have efficient team communication"
+            >
+              {getFieldDecorator("feature", {
+                rules: [
+                  // {
+                  //   required: true,
+                  //   message: "Please input your job title!",
+                  //   whitespace: true,
+                  // },
+                  {
+                    max: 500,
+                    message: "Please limit your description to 500 words",
+                  },
+                ],
+              })(<Input />)}
             </Form.Item>
             <Form.Item {...tailFormItemLayout}>
               <Button type="primary" htmlType="submit">

@@ -22,6 +22,7 @@ const ModalForm = () => {
   return (
     <div style={{ zIndex: 200 }}>
       <Modal
+        width={800}
         title={<ModalTitle />}
         onCancel={handleOnCancel}
         visible={modalState}
