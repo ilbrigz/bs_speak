@@ -9,26 +9,24 @@ export const description =
 
 export const cards = [
   {
-    image: "id-card.png",
-    title: "White Labeling Social Collaboration",
+    image: "home.png",
+    title: "Customizable Dashboard Display",
     description:
-      "Build brand visibility and extend customer react with visual & interactive bulleting board",
+      "U cloud-based visual dashboard you can customize depending on task and goal priority",
   },
   {
-    image: "chat.png",
-    title: "AI Chatbots",
-    description:
-      "Automate customer service to immediately reply to customer queries even when everyone is busy",
+    image: "tag.png",
+    title: "Multiple Search Filters",
+    description: "Quickly find what you are looking for",
   },
   {
     image: "sms.png",
-    title: "Push Promo Notification",
-    description:
-      "SMS automation is an option for those who are not connected to the internet",
+    title: "Selective Notification",
+    description: "Choose topics you care about and throw away clutter & noise",
   },
   {
-    image: "shopping.png",
-    title: "Ecommerce",
-    description: "Boost sales with targeted audience in Community Marketplace",
+    image: "puzzle.png",
+    title: "Plug-ins & Integration Capabilities",
+    description: "Streamline your workflow by including the apps you want",
   },
 ]

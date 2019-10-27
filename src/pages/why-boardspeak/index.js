@@ -1,4 +1,4 @@
-import React, { useState, useContext, useRef } from "react"
+import React from "react"
 import { useSpring } from "react-spring"
 import WhyBs from "../../components/imageComponents/WhBs.image"
 import {

@@ -35,7 +35,7 @@ const IndexPage = () => (
         marginTop: "2rem",
       }}
     >
-      <Link to="h2">
+      <Link to="/h2/">
         <span>Take Control</span>
         <Icon type="swap-right" />
       </Link>

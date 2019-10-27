@@ -122,12 +122,12 @@ class RegistrationForm extends React.Component {
                 rules: [
                   {
                     required: true,
-                    message: "Please input your first name!",
+                    message: "Please input your First Name!",
                     whitespace: true,
                   },
                   {
                     max: 255,
-                    message: "That is too long for a first name",
+                    message: "That is too long for a First name",
                   },
                   {
                     type: "string",

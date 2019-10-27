@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react"
+import React, { useContext } from "react"
 import { Dropdown, Icon, Button, Menu } from "antd"
 import "./navbar.css"
 import { Link } from "gatsby"
