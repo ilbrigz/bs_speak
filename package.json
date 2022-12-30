@@ -9,7 +9,7 @@
     "@feathersjs/socketio-client": "^4.3.5",
     "antd": "^3.23.4",
     "babel-plugin-styled-components": "^1.10.6",
-    "gatsby": "^2.15.28",
+    "gatsby": "^2.32.13",
     "gatsby-image": "^2.2.23",
     "gatsby-plugin-layout": "^1.1.13",
     "gatsby-plugin-manifest": "^2.2.20",
